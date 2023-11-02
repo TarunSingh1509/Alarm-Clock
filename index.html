@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icons8-retro-alarm-clock-16.png">
 </head>
 <body>
+    <!-- main wrapper class for the box -->
     <div class="wrapper">
+        <!-- image for the alarm clock -->
         <img src="2010-07-20_Black_windup_alarm_clock_face.jpg" alt="">
+        <!-- first container for current time and main alarm -->
         <div class="container">
+            <!-- this h1 for current time and we can enter here time using the javascrpit -->
             <h1>00:00:00 AM</h1>
             <div class="content">
+                <!-- using select tag for setting alarm time for main alarm  -->
                 <div class="column">
-                <select>
-                    <option value="hours" selected hidden>hours</option>
-                    <!-- <option value="01">01</option>
-                    <option value="02">02</option> -->
-                </select>
-            </div>
-            <div class="column">
-                <select>
-                    <option value="minutes" selected hidden>minutes</option>
-                    <!-- <option value="01">01</option>
-                        <option value="02">02</option> -->
+                    <select>
+                        <option value="hours" selected hidden>hours</option>
                     </select>
-                </div><div class="column">
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="minutes" selected hidden>minutes</option>
+                    </select>
+                </div>
+                <div class="column">
                     <select>
                         <option value="AM/PM" selected hidden>AM/PM</option>
-                        <!-- <option value="AM">AM</option>
-                            <option value="PM">PM</option> -->
-                        </select>
-                    </div>
+                    </select>
                 </div>
             </div>
-        <button>Set Alarm</button>
+            <button>Set Alarm</button>
+        </div>
+        <!-- second container for second alarm -->
+        <div class="container2">
+
+            <div class="content2">
+                <div class="column">
+                    <!-- using select tag for setting alarm time for second alarm  -->
+                    <select>
+                        <option value="hours" selected hidden>hours</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="minutes" selected hidden>minutes</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="AM/PM" selected hidden>AM/PM</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn2">Set Alarm</button>
+        </div>
+        <!-- third container for third alarm  -->
+        <div class="container3">
+
+            <div class="content3">
+                <div class="column">
+                    <!-- using select tag for setting alarm time for third alarm  -->
+                    <select>
+                        <option value="hours" selected hidden>hours</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="minutes" selected hidden>minutes</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <select>
+                        <option value="AM/PM" selected hidden>AM/PM</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn3">Set Alarm</button>
+        </div>
+        </div>
     </div>
     <script src="scrpit.js"></script>
 </body>
+
 </html>
